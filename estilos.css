@@ -1,0 +1,353 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(245, 245, 245);
+    margin:0;
+    
+    font-family:Roboto, sans-serif;
+}
+html{
+    scroll-behavior:smooth;
+}
+h1{font-size:2.5em;}
+h2{font-size:1.7em;}
+h3{font-size:1em;}
+p{font-size:1.2em;}
+ul{list-style:none;}
+
+button{
+    font-size: 0.8em;
+    font-weight:bold;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border:1px solid rgb(100,100,100);
+    box-shadow:2px 2px 10px rgba(0,0,0,0.4);
+    color:white;
+    background-color: blueviolet;
+}
+
+button:hover{
+    background-color: rgb(67, 27, 105);
+}
+
+#aplica-ya input:hover{
+    background-color:rgb(67, 27, 105); 
+}
+.container{
+    max-width:1400px;
+    margin:auto;
+}
+header{
+background-color:rgb(245,245,245);
+}
+header .container{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    
+}
+header .logo{
+    margin:0;
+    padding:25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size:1.6em;
+}
+header nav{
+    display:flex;
+    flex-direction:column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header ul{
+list-style:none;
+padding:0px;
+}
+
+header li {
+padding: 5px 12px;
+}
+header li a{
+text-decoration: none;
+font-weight: bold;
+color: rgba(12, 12, 12, 0.973);
+}
+
+#hero{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    text-align:center;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg, 
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+        ,url(Media/hero.jpeg);
+        background-repeat: none;
+        background-size:cover;
+        background-position: center center;
+}
+#hero h1{
+    font-size: 2em;
+}
+
+#somos-proya .container{
+    text-align:center;
+    padding: 200px 12px;
+    
+}
+.color-acento{
+    color: blueviolet;
+}
+
+#nuestros-programas{
+    background-color: rgb(30,30,30);
+    color:rgb(245,245,245);
+    text-align:center;
+}
+#nuestros-programas .container{
+   padding: 100px 0px;
+}
+#nuestros-programas p{
+    display:none;
+}
+#nuestros-programas h2{
+    margin-top:0;
+    font-size:2.2em;
+}
+#nuestros-programas .carta{
+    background-position: center center;
+    background-size:cover;
+    padding: 50px;
+    margin:12px;
+    border-radius: 15px;
+
+}
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg, 
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+        ,url(Media/front-end.jpeg);
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg, 
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+        ,url(Media/full-stack.jpeg);   
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg, 
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+        ,url(Media/python.jpeg); 
+}
+#caracteristicas .container i{
+    color: green;
+}
+#caracteristicas .container{
+   
+    padding: 150px 12px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+#caracteristicas .container ul{
+    padding:0px;
+}
+#caracteristicas .container li{
+    margin:16px 0px;
+    font-weight: bold;
+}
+
+#aplica-ya {
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    justify-content: center;
+    background-color: rgb(30,30,30);
+    color:rgb(254,254,254);
+    height:80vh;
+    
+}
+
+#aplica-ya input{
+    font-size: 15px;
+    font-weight:bold;
+    padding: 12px 12px;
+    border-radius: 10px;
+    border:1px solid rgb(100,100,100);
+    box-shadow:2px 2px 10px rgba(0,0,0,0.4);
+    color:white;
+    background-color: blueviolet;
+    margin-left:auto;
+    margin-right:auto;
+    width: 150px;
+    }
+
+footer{
+    background-color: rgb(230,230,230);
+}
+footer p{
+    margin:0;
+    color:rgn(100,100,100);
+    padding: 12px;
+}
+footer .container{
+    height:150px;
+    display:flex;
+    justify-content:center;
+    align-items: flex-end;
+}
+
+@media only screen and (min-width:780px){
+    header{
+        position:fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction:row;
+        justify-content: space-between;
+    }
+    header nav{
+        padding-bottom:0px;
+    }
+    header nav ul{
+        display: flex;
+        flex-direction: row;
+        padding-right: 20px;
+    }
+    
+    #somos-proya .container{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: -50px;
+    
+    }
+    #somos-proya .container div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #somos-proya .img-container{
+        background-image: linear-gradient(
+            0deg, 
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+            )
+            ,url(Media/somos-proya.jpeg);
+            background-position: center center;
+            background-repeat: none;
+            background-size:cover;
+            height: 500px;
+            width:400px;
+            margin:0;
+    }
+    #somos-proya .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align:initial;
+        margin-left: 20px;
+        
+    }
+    #hero h1{
+        font-size: 4vw;
+    }
+    #hero button{
+        font-size: 2vw;
+    }
+    #nuestros-programas{
+        margin-top: -50px;
+    }
+#nuestros-programas .programas{
+    Display:flex;
+    justify-content: center;
+}
+#nuestros-programas p{
+    display:block;
+    margin-top: 100px;
+    text-align: start;
+}
+#nuestros-programas .carta{
+    padding:50px;
+    background-size: 100% 150px;
+    background-repeat: no-repeat;
+    background-position:0 0 ;
+    background-color: rgba(84, 39, 95, 0.2) ;
+}
+#nuestros-programas h3{
+    margin-top: 25px;
+    font-size: 1.5em;
+    
+}
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg, 
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+        ,url(Media/front-end-cropped.jpeg);
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg, 
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+        ,url(Media/full-stack-cropped.jpeg);   
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg, 
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+        ,url(Media/python-cropped.jpeg); 
+}
+#caracteristicas{
+    background-image: url(Media/background-2.jpeg);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 600px;
+    
+}
+
+#caracteristicas .container{
+    display:flex;
+    align-items: initial;
+    margin-left: 10%;
+
+}
+#caracteristicas ul{
+    margin-left: 100px;
+}
+#aplica-ya h2{
+font-size: 3em;
+}
+#aplica-ya button{
+font-size: 2em;
+}
+footer .container{
+display:flex;
+flex-direction: row;
+justify-content:flex-end;
+align-items: flex-end;
+
+        }
+}
